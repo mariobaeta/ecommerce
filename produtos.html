@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todos os Produtos - RedStore</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+
+   <div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png" width="125px"></a> 
+        </div>
+        <nav>
+             <ul id="MenuItems">
+               <li><a href="index.html">Início</a></li>
+               <li><a href="produtos.html">Produtos</a></li>
+               <li><a href="">Sobre Nós</a></li>
+               <li><a href="">Contactos</a></li>
+               <li><a href="conta.html">Conta</a></li>              
+              </ul>
+        </nav>
+        <a href="carrinho.html"><img src="images/cart.png" width="30px" height="30px"></a>
+        <img src="images/menu.png" class="menu-icon" 
+        onclick="menutoggle()">
+     </div>      
+   </div>
+ 
+   <div class="small-container">
+      
+      <div class="row row-2">
+          <h2>Todos os produtos</h2>
+          <select>
+              <option>Ordenação Padrão</option>
+              <option>Ordenar por Preço</option>
+              <option> Ordenar por Popularidade</option>
+              <option>Ordenar por Classificação</option>
+              <option>Ordenar por Vendas</option>
+          </select>
+      </div>
+       <div class="row">
+           <div class="col-4">
+               <a href="detalhes-produto.html"><img src="images/product-1.jpg"></a>
+               <a href="detalhes-produto.html"><h4>T-shirt com estampa</h4></a>
+               <div class="classificacao">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+               </div>
+               <p>18,00€</p>
+           </div>
+           <div class="col-4">
+               <img src="images/product-2.jpg">
+               <h4>Ténis de caminhada HRX</h4>
+               <div class="classificacao">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half-o"></i>
+                  <i class="fa fa-star-o"></i>
+               </div>
+               <p>56,00€</p>
+           </div>
+           <div class="col-4">
+               <img src="images/product-3.jpg">
+               <h4>Calça de desporto Benetton</h4>
+               <div class="classificacao">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+               </div>
+               <p>47,00€</p>
+           </div>
+           <div class="col-4">
+               <img src="images/product-4.jpg">
+               <h4>Camisa polo azul</h4>
+               <div class="classificacao">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half-o"></i>
+               </div>
+               <p>23,00€</p>
+           </div>
+       </div>
+       <div class="row">
+           <div class="col-4">
+               <img src="images/product-5.jpg">
+               <h4>Ténis cano alto</h4>
+               <div class="classificacao">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+               </div>
+               <p>77,00€</p>
+           </div>
+           <div class="col-4">
+               <img src="images/product-6.jpg">
+               <h4>T-shirt Puma</h4>
+               <div class="classificacao">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half-o"></i>
+                  <i class="fa fa-star-o"></i>
+               </div>
+               <p>26,00€</p>
+           </div>
+           <div class="col-4">
+               <img src="images/product-7.jpg">
+               <h4>Peúga de desporto HRX</h4>
+               <div class="classificacao">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+               </div>
+               <p>12,00€</p>
+           </div>
+           <div class="col-4">
+               <img src="images/product-8.jpg">
+               <h4>Relógio Fossil</h4>
+               <div class="classificacao">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half-o"></i>
+               </div>
+               <p>81,00€</p>
+           </div>
+       </div>
+       <div class="row">
+           <div class="col-4">
+               <img src="images/product-9.jpg">
+               <h4>Relógio Roadster</h4>
+               <div class="classificacao">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+               </div>
+               <p>67,00€</p>
+           </div>
+           <div class="col-4">
+               <img src="images/product-10.jpg">
+               <h4>Ténis de trail marca X</h4>
+               <div class="classificacao">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half-o"></i>
+                  <i class="fa fa-star-o"></i>
+               </div>
+               <p>79,00€</p>
+           </div>
+           <div class="col-4">
+               <img src="images/product-11.jpg">
+               <h4>Ténis casual cinza</h4>
+               <div class="classificacao">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+                  <i class="fa fa-star-o"></i>
+               </div>
+               <p>39,00€</p>
+           </div>
+           <div class="col-4">
+               <img src="images/product-12.jpg">
+               <h4>Calça de desporto Nike</h4>
+               <div class="classificacao">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half-o"></i>
+               </div>
+               <p>44,00€</p>
+           </div>
+       </div>
+       
+        <div class="pagina-btn">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>&#8594;</span>
+        </div>          
+
+   </div>
+
+
+<!------ rodape ------>
+    
+    <div class="rodape">
+        <div class="container">
+            <div class="row">
+                <div class="rodape-col-1">
+                    <h3>Baixe a nossa app</h3>
+                    <p>Baixe a app para Android e iOS</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png">
+                        <img src="images/app-store.png">
+                    </div>
+                </div>
+                <div class="rodape-col-2">
+                    <img src="images/logo-white.png">
+                    <p>O nosso objetivo é tornar o prazer e os benefícios do desporto acessíveis de forma sustentável a um maior número de pessoas.</p>
+                </div>
+                <div class="rodape-col-3">
+                    <h3>Links úteis</h3>
+                    <ul>
+                        <li>Cupons</li>
+                        <li>Artigo do blog</li>
+                        <li>Política de devoluções</li>
+                        <li>Torne-se afiliado</li>
+                        
+                    </ul>
+                </div>
+                <div class="rodape-col-4">
+                    <h3>Siga-nos</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">© 2024 Bruna. Todos os direitos reservados.</p>
+        </div>
+    </div>
+           
+<!------ js para alternar menu  ------>
+          <script>
+              var MenuItems = document.getElementById("MenuItems");
+              
+              MenuItems.style.maxHeight = "0px";
+              
+              function menutoggle(){
+                  if(MenuItems.style.maxHeight == "0px")
+                    {
+                      MenuItems.style.maxHeight = "200px";
+                    }
+                  else
+                    {
+                      MenuItems.style.maxHeight = "0px";
+                    }
+                  
+              }
+              
+          </script>
+    
+                               
+            
+</body>
+ </html>

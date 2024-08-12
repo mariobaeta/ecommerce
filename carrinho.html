@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todos os Produtos - RedStore</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+
+   <div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png" width="125px"></a> 
+        </div>
+        <nav>
+             <ul id="MenuItems">
+               <li><a href="index.html">Início</a></li>
+               <li><a href="produtos.html">Produtos</a></li>
+               <li><a href="">Sobre Nós</a></li>
+               <li><a href="">Contactos</a></li>
+               <li><a href="conta.html">Conta</a></li>              
+              </ul>
+        </nav>
+        <a href="carrinho.html"><img src="images/cart.png" width="30px" height="30px"></a>
+        <img src="images/menu.png" class="menu-icon" 
+        onclick="menutoggle()">
+     </div>      
+   </div>
+   
+<!------ detalhes dos itens do carrinho  ------>
+
+    <div class="small-container carrinho-pagina">
+       
+       <table>
+           <tr>
+               <th>Produto</th>
+               <th>Quantidade</th>
+               <th>Subtotal</th>
+           </tr>
+           <tr>
+               <td>
+                   <div class="carrinho-info">
+                       <img src="images/buy-1.jpg">
+                       <div>
+                           <p>T-shirt com estampa Puma</p>
+                           <small>Preço: 18.00€</small>
+                           <br>
+                           <a href="">Excluir</a>
+                       </div>
+                   </div>
+                   
+               </td>
+               <td><input type="number" value="1"></td>
+               <td>18.00€</td>
+           </tr>
+           <tr>
+               <td>
+                   <div class="carrinho-info">
+                       <img src="images/buy-2.jpg">
+                       <div>
+                           <p>Ténis de caminhada HRX</p>
+                           <small>Preço: 56.00€</small>
+                           <br>
+                           <a href="">Excluir</a>
+                       </div>
+                   </div>
+                   
+               </td>
+               <td><input type="number" value="1"></td>
+               <td>56.00€</td>
+           </tr>
+           <tr>
+               <td>
+                   <div class="carrinho-info">
+                       <img src="images/buy-3.jpg">
+                       <div>
+                           <p>Calça de desporto Benetton</p>
+                           <small>Preço: 47.00€</small>
+                           <br>
+                           <a href="">Excluir</a>
+                       </div>
+                   </div>
+                   
+               </td>
+               <td><input type="number" value="1"></td>
+               <td>47.00€</td>
+           </tr>
+       </table>
+       
+       <div class="preco-total">
+           <table>
+               <tr>
+                   <td>Subtotal</td>
+                   <td>121.00€</td>
+               </tr>
+               <tr>
+                   <td>Taxa</td>
+                   <td>27.83€</td>
+               </tr>
+               <tr>
+                   <td>Total</td>
+                   <td>148.83€</td>
+               </tr>
+           </table>
+       </div>
+        
+    </div>
+
+
+<!------ rodape ------>
+    
+    <div class="rodape">
+        <div class="container">
+            <div class="row">
+                <div class="rodape-col-1">
+                    <h3>Baixe a nossa app</h3>
+                    <p>Baixe a app para Android e iOS</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png">
+                        <img src="images/app-store.png">
+                    </div>
+                </div>
+                <div class="rodape-col-2">
+                    <img src="images/logo-white.png">
+                    <p>O nosso objetivo é tornar o prazer e os benefícios do desporto acessíveis de forma sustentável a um maior número de pessoas.</p>
+                </div>
+                <div class="rodape-col-3">
+                    <h3>Links úteis</h3>
+                    <ul>
+                        <li>Cupons</li>
+                        <li>Artigo do blog</li>
+                        <li>Política de devoluções</li>
+                        <li>Torne-se afiliado</li>
+                        
+                    </ul>
+                </div>
+                <div class="rodape-col-4">
+                    <h3>Siga-nos</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">© 2024 Bruna. Todos os direitos reservados.</p>
+        </div>
+    </div>
+           
+<!------ js para alternar menu  ------>
+          <script>
+              var MenuItems = document.getElementById("MenuItems");
+              
+              MenuItems.style.maxHeight = "0px";
+              
+              function menutoggle(){
+                  if(MenuItems.style.maxHeight == "0px")
+                    {
+                      MenuItems.style.maxHeight = "200px";
+                    }
+                  else
+                    {
+                      MenuItems.style.maxHeight = "0px";
+                    }
+                  
+              }
+              
+          </script>
+           
+</body>
+
+</html>
